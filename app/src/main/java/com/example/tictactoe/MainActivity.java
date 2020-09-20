@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
          }
          if(gameState[tappedImage]== 2) {
              gameState[tappedImage] = activePlayer;
-             img.setTranslationY(-1000f);
+//              img.setTranslationY(-1000f);
              if (activePlayer == 0) {
                  img.setImageResource(R.drawable.x);
                  activePlayer = 1;
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                  TextView status=findViewById(R.id.textView2);
                  status.setText("X's Turn - Tap to play");
              }
-             img.animate().translationXBy(1000f).setDuration(300);
+//              img.animate().translationXBy(1000f).setDuration(300);
 
          }
          // Check if any player has won
